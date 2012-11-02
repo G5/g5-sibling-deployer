@@ -1,6 +1,6 @@
 # G5 Client Hub Deployer
 
-* Updates one client hub
+* Updates a client hub
 * TODO: 
     * Consumes configurator's feed
 
@@ -67,12 +67,3 @@ rake jobs:work
 
 If you find bugs, have feature requests or questions, please
 [file an issue](https://github.com/g5search/g5-client-hub-deployer/issues).
-
-
-## Specs
-
-Export environment variables
-```bash
-export PUBLIC_GITHUB_REPO=git@github.com:G5/static-sinatra-prototype.git
-export PRIVATE_GITHUB_REPO=git@github.com:g5search/g5-client-location.git
-```
