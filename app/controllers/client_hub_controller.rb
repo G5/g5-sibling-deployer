@@ -1,5 +1,6 @@
 class ClientHubController < ApplicationController
   def index
+    @configurator_entries = ConfiguratorEntry.order("created_at DESC").all
   end
 
   def deploy

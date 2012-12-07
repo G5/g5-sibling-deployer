@@ -1,2 +1,19 @@
-<% title "Client Hub Deployer" %>
-<%= link_to "Deploy!", deploy_path, method: :post, class: "btn btn-success" %>
+<% title "Instructed Deploys" %>
+<% header_right link_to "Manual Deploy", deploy_path, method: :post, class: "btn btn-success" %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Instruction UID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @configurator_entries.each do |entry| %>
+      <tr>
+        <td><%= link_to entry.created_at %></td>
+        <td><%= link_to entry.uid %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
