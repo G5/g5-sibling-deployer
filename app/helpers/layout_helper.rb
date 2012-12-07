@@ -12,6 +12,15 @@ module LayoutHelper
     @show_title
   end
 
+ def header_right(page_header_right, show_header_right = true)
+    content_for(:header_right) { h(page_header_right.to_s) }
+    @show_header_right = show_header_right
+  end
+
+  def show_header_right?
+    @show_header_right
+  end
+
   def stylesheet(*args)
     content_for(:head) { stylesheet_link_tag(*args) }
   end
