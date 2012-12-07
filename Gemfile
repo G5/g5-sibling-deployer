@@ -1,13 +1,17 @@
 source :rubygems
+source "https://gems.gemfury.com/88yeKzEGfizstwBaXVqj/"
 
 gem "rails", "3.2.7"
 gem "pg"
 gem "jquery-rails"
-gem "quiet_assets", "~> 1.0.1"
-gem "github_heroku_deployer", "~> 0.0.5"
-gem "resque", "~> 1.23.0"
-gem "foreman", "~> 0.60.2"
+
 gem "bootstrap-sass", "~> 2.1.0.1"
+gem "quiet_assets", "~> 1.0.1"
+
+gem "foreman", "~> 0.60.2"
+gem "heroku_resque_autoscaler", "~> 0.1.0"
+gem "g5_hentry_consumer", "~> 0.2.3"
+gem "github_heroku_deployer", "~> 0.1.9"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
@@ -22,4 +26,8 @@ group :development, :test do
   gem "debugger", "~> 1.2.1"
   gem "fabrication", "~> 2.5.0"
   gem "faker", "~> 1.1.2"
+end
+
+group :production do
+  gem "thin", "~> 1.5.0"
 end
