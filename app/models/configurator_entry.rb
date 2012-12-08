@@ -26,7 +26,7 @@ class ConfiguratorEntry < ActiveRecord::Base
         hentry == TARGET_URL
       else
         targets = hentry.content.first.targets
-        targets && targets.include? TARGET_URL
+        targets && targets.include?(TARGET_URL)
       end
     end
 
