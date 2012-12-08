@@ -5,6 +5,7 @@
   <thead>
     <tr>
       <th>Time</th>
+      <th>Targets Me?</th>
       <th>Instruction UID</th>
     </tr>
   </thead>
@@ -12,6 +13,7 @@
     <% @configurator_entries.each do |entry| %>
       <tr>
         <td><%= link_to entry.created_at %></td>
+        <td><%= link_to entry.targets_me %></td>
         <td><%= link_to entry.uid %></td>
       </tr>
     <% end %>
