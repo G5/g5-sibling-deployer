@@ -1,4 +1,5 @@
 class ConfiguratorEntryConsumer
+  extend HerokuResqueAutoscaler if Rails.env.production?
   @queue = :consumer
 
   def self.perform
