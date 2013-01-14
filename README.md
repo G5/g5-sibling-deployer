@@ -1,7 +1,7 @@
 # G5 Client Hub Deployer
 
 * Updates a client hub
-* TODO: 
+* TODO:
     * Consumes configurator's feed
 
 ## Setup
@@ -12,10 +12,10 @@ bundle
 ```
 
 1. Set up your database
+[rails-default-database](https://github.com/tpope/rails-default-database)
+automatically uses sensible defaults for the primary ActiveRecord database.
 ```bash
-cp config/database.example.yml config/database.yml
-vi config/database.yml # edit username
-rake db:create db:schema:load db:seed
+rake db:setup
 ```
 
 1. Install [redis](http://redis.io/) and start it
