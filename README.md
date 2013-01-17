@@ -1,8 +1,6 @@
 # G5 Client Hub Deployer
 
-* Updates a client hub
-* TODO:
-    * Consumes configurator's feed
+Deploys Sibling App (g5-client-hub) automagically from Instruction Feed.
 
 ## Setup
 
@@ -67,3 +65,18 @@ rake jobs:work
 
 If you find bugs, have feature requests or questions, please
 [file an issue](https://github.com/g5search/g5-client-hub-deployer/issues).
+
+
+## Specs
+
+```bash
+guard
+```
+
+
+## Coverage
+
+```bash
+rspec spec
+open coverage/index.html
+```
