@@ -6,14 +6,14 @@ describe ErrorMessagesHelper do
       helper.error_messages_for(nil).should eq nil
     end
     it "returns messages when messages" do
-      app = ClientApp.create
-      helper.error_messages_for(app).should include "Invalid Fields"
+      instruction = Sibling::Instruction.create
+      helper.error_messages_for(instruction).should include "Invalid Fields"
     end
   end
   describe ErrorMessagesHelper::FormBuilderAdditions do
     describe "#error_messages" do
       it "calls ErrorMessagesHelper#error_messages_for" do
-        class Foo 
+        class Foo
           include ErrorMessagesHelper::FormBuilderAdditions
           def initialize(template)
             @template = template
@@ -25,7 +25,7 @@ describe ErrorMessagesHelper do
     end
   end
   it "is included in FormBuilder" do
-    ActionView::Helpers::FormBuilder.included_modules.should 
+    ActionView::Helpers::FormBuilder.included_modules.should
       include ErrorMessagesHelper::FormBuilderAdditions
   end
 end
