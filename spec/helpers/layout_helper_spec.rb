@@ -43,4 +43,16 @@ describe LayoutHelper do
       helper.flash_div(:notice).should include "alert-info"
     end
   end
+  describe "#javascript" do
+    it "puts content in head" do
+      helper.should_receive(:content_for).with(:head).once
+      helper.javascript "application"
+    end
+  end
+  describe "#stylesheet" do
+    it "puts content in head" do
+      helper.should_receive(:content_for).with(:head).once
+      helper.stylesheet "application"
+    end
+  end
 end
