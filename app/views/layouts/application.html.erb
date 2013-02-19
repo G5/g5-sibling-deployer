@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>G5 Client Hub Deployer - <%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= app_display_name %> - <%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tag %>
@@ -23,7 +23,7 @@
             </a>
 
             <!-- Be sure to leave the brand out there if you want it shown -->
-            <a class="brand" href="<%= root_path %>">G5 Client Hub Deployer</a>
+            <a class="brand" href="<%= root_path %>"><%= app_display_name %></a>
 
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse">
