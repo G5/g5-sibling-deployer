@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-G5ClientHubDeployer::Application.load_tasks
+G5SiblingDeployer::Application.load_tasks
