@@ -16,6 +16,11 @@ automatically uses sensible defaults for the primary ActiveRecord database.
 rake db:setup
 ```
 
+1. Copy config/application.example.yml to config/application.yml and set the app display name
+```bash
+cp config/application.example.yml config/application.yml
+```
+
 1. Install [redis](http://redis.io/) and start it
 ```bash
 brew install redis
