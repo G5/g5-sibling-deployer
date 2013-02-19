@@ -5,7 +5,7 @@
 module LayoutHelper
 
   def app_display_name
-    CONFIG[:app_display_name]
+    ENV["APP_DISPLAY_NAME"]
   end
 
   def title(page_title, show_title = true)
