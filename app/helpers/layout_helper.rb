@@ -3,6 +3,11 @@
 # to do so you may need to add this line to your ApplicationController
 #   helper :layout
 module LayoutHelper
+
+  def app_display_name
+    CONFIG[:app_display_name]
+  end
+
   def title(page_title, show_title = true)
     content_for(:title) { h(page_title.to_s) }
     @show_title = show_title

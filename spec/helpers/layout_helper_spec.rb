@@ -1,6 +1,12 @@
 require "spec_helper"
 
 describe LayoutHelper do
+  describe "#app_display_name" do
+    it "outputs the customizable display name for the app" do
+      stub_const("CONFIG", {:app_display_name => "Test 123"})
+      helper.app_display_name.should == "Test 123"
+    end
+  end
   describe "#title" do
     it "sets content_for(:title)" do
       helper.title("foo")
