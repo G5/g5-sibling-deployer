@@ -3,7 +3,7 @@ require "spec_helper"
 describe LayoutHelper do
   describe "#app_display_name" do
     it "outputs the customizable display name for the app" do
-      stub_const("CONFIG", {:app_display_name => "Test 123"})
+      stub_const("ENV", {"APP_DISPLAY_NAME" => "Test 123"})
       helper.app_display_name.should == "Test 123"
     end
   end
