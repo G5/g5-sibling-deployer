@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: g5-client-hub-deployer_development
+  database: g5-sibling-deployer_development
   pool: 5
-  username: g5-client-hub-deployer
+  username: g5-sibling-deployer
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: g5-client-hub-deployer_test
+  database: g5-sibling-deployer_test
   pool: 5
-  username: g5-client-hub-deployer
+  username: g5-sibling-deployer
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: g5-client-hub-deployer_production
+  database: g5-sibling-deployer_production
   pool: 5
-  username: g5-client-hub-deployer
+  username: g5-sibling-deployer
   password:
