@@ -10,7 +10,7 @@ gem "quiet_assets", "~> 1.0.1"
 
 gem "foreman", "~> 0.60.2"
 
-gem "g5_sibling_deployer", "~> 0.1.0"
+gem "g5_sibling_deployer_engine", "~> 0.1.1"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
