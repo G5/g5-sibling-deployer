@@ -1,6 +1,6 @@
-# G5 Client Hub Deployer
+# G5 Sibling Deployer
 
-Deploys Sibling App (g5-client-hub) automagically from Instruction Feed.
+Deploys Sibling App automagically from Instruction Feed.
 
 ## Setup
 
