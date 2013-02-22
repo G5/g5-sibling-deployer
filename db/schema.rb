@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121211022923) do
+ActiveRecord::Schema.define(:version => 20130222012640) do
 
   create_table "sibling_deploys", :force => true do |t|
     t.integer  "sibling_id"
