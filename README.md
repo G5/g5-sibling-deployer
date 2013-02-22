@@ -35,6 +35,7 @@ export HEROKU_APP_NAME=your_heroku_app_name
 export HEROKU_REPO=git@heroku.com:your-heroku-app-name.git
 export GITHUB_REPO=git@github.com:your/your-github-repo-name.git
 export ID_RSA=your_private_key
+export APP_DISPLAY_NAME=your_preferred_display_name
 ```
 
 1. Use foreman to start the web and worker proccesses
