@@ -64,7 +64,7 @@ rake jobs:work
 1. Create new Pull Request
 
 If you find bugs, have feature requests or questions, please
-[file an issue](https://github.com/g5search/g5-client-hub-deployer/issues).
+[file an issue](https://github.com/g5search/g5-sibling-deployer/issues).
 
 
 ## Specs
