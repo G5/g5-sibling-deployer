@@ -1,7 +1,7 @@
-source :rubygems
+source "https://rubygems.org"
 source "https://gems.gemfury.com/***REMOVED***/"
 
-gem "rails", "3.2.11"
+gem "rails", "3.2.13"
 gem "pg"
 gem "jquery-rails"
 
@@ -10,7 +10,7 @@ gem "quiet_assets", "~> 1.0.1"
 
 gem "foreman", "~> 0.60.2"
 
-gem "g5_sibling_deployer_engine", "~> 0.1.1"
+gem "g5_sibling_deployer_engine", "~> 0.2.1"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
