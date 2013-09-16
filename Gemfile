@@ -2,7 +2,6 @@ source "https://rubygems.org"
 source "https://gems.gemfury.com/***REMOVED***/"
 
 gem "rails", "3.2.13"
-gem "pg"
 gem "jquery-rails"
 
 gem "bootstrap-sass", "~> 2.1.0.1"
@@ -20,6 +19,7 @@ end
 
 group :development, :test do
   gem "rails-default-database", "~> 1.0.6"
+  gem "sqlite3"
   gem "simplecov", "~> 0.7.1", require: false
   gem "rspec-rails", "~> 2.11.4"
   gem "guard-rspec", "~> 2.1.0"
@@ -31,5 +31,6 @@ group :development, :test do
 end
 
 group :production do
+  gem "pg"
   gem "thin", "~> 1.5.0"
 end
