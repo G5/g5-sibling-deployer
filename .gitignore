@@ -22,3 +22,6 @@
 
 # Ignore coverage
 /coverage
+
+# Ignore environment specific env
+.env.*
