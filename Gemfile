@@ -36,4 +36,5 @@ group :production do
   gem "pg"
   gem "thin", "~> 1.5.0"
   gem "newrelic_rpm"
+  gem "honeybadger"
 end
