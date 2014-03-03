@@ -52,6 +52,7 @@ rake jobs:work
 
   * Jessica Lynn Suttles / [@jlsuttles](https://github.com/jlsuttles)
   * Bookis Smuin / [@bookis](https://github.com/bookis)
+  * Jessica Dillon / [@jessicard](https://github.com/jessicard)
 
 
 ## Contributing
