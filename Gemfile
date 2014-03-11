@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-source "https://gems.gemfury.com/***REMOVED***/"
 
 gem "rails", "3.2.13"
 gem "jquery-rails"
