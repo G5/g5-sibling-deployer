@@ -1,5 +1,8 @@
 # G5 Sibling Deployer
 
+[![Build Status](https://travis-ci.org/G5/g5-sibling-deployer.png?branch=master)](https://travis-ci.org/G5/g5-sibling-deployer)
+[![Code Climate](https://codeclimate.com/repos/531ea1a66956807e1500a9c2/badges/0fa10391f3e9280dfc77/gpa.png)](https://codeclimate.com/repos/531ea1a66956807e1500a9c2/feed)
+
 Deploys Sibling App automagically from Instruction Feed.
 
 ## Setup
@@ -66,7 +69,7 @@ rake jobs:work
 1. Create new Pull Request
 
 If you find bugs, have feature requests or questions, please
-[file an issue](https://github.com/g5search/g5-sibling-deployer/issues).
+[file an issue](https://github.com/G5/g5-sibling-deployer/issues).
 
 
 ## Specs
