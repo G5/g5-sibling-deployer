@@ -1,0 +1,4 @@
+test:
+  adapter: postgresql
+  database: g5_sibling_deployer_test
+  username: postgres

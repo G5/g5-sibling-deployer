@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+  - 1.9.3
+script:
+  - RAILS_ENV=test bundle exec rake db:schema:load --trace
+  - bundle exec rspec
+before_script:
+  - cp config/database.travis.yml config/database.yml
+  - psql -c 'create database g5_sibling_deployer_test;' -U postgres
+notifications:
+  campfire:
+    rooms:
+      secure: YaK1DpJ0fY/nRp2iu88pI8Tgql+DK4hV5LC9U11ZCme9iPyh3BE7NbhpQsCNVE36JbOrSv3SI0+QnjPQdzEFEKXOrU2VUo0mYe3qot+lNlyRP3les86t947TqUoVpVg0T5gqtw7F/9njxwOk2UXI5X5e97L9iU+WYhDpqvVp3eM=
+    template:
+      - '%{repository}#%{build_number} %{message} (%{branch} - %{commit} : %{author}) Change view : %{compare_url} Build details : %{build_url}'
+    on_success: change
+    on_failure: always
