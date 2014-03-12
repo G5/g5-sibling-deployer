@@ -34,7 +34,7 @@ gem "codeclimate-test-reporter", group: :test, require: nil
 
 group :production do
   gem "pg"
-  gem "thin", "~> 1.5.0"
+  gem "unicorn"
   gem "newrelic_rpm"
   gem "honeybadger"
 end
