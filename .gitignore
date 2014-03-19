@@ -25,3 +25,5 @@
 
 # Ignore environment specific env
 .env.*
+
+.DS_Store
