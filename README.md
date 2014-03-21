@@ -11,10 +11,12 @@ Deploys Sibling App automagically from Instruction Feed.
 ```bash
 bundle
 ```
+1. Copy example database file
+```bash
+$ cp config/database.example.yml config/database.yml
+```
 
 1. Set up your database
-[rails-default-database](https://github.com/tpope/rails-default-database)
-automatically uses sensible defaults for the primary ActiveRecord database.
 ```bash
 rake db:setup
 ```
