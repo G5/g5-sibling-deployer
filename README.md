@@ -11,7 +11,10 @@ Deploys Sibling App automagically from Instruction Feed.
 ```bash
 bundle
 ```
-1. Rename config/database.example.yml to config/database.yml.
+1. Copy example database file
+```bash
+$ cp config/database.example.yml config/database.yml
+```
 
 1. Set up your database
 ```bash
