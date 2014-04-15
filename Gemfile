@@ -7,8 +7,6 @@ gem "jquery-rails"
 gem "bootstrap-sass", "~> 2.1.0.1"
 gem "quiet_assets", "~> 1.0.1"
 
-gem "foreman", "~> 0.60.2"
-
 gem "g5_sibling_deployer_engine", "~> 0.3.2"
 
 gem "sass-rails", "~> 4.0.0"
@@ -25,6 +23,7 @@ group :development, :test do
   gem "rb-fsevent", "~> 0.9.2"
   gem "fabrication", "~> 2.9.8"
   gem "faker", "~> 1.3.0"
+  gem "foreman"
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil
