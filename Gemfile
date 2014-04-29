@@ -33,4 +33,5 @@ group :production do
   gem "unicorn"
   gem "newrelic_rpm"
   gem "honeybadger"
+  gem "rails_12factor"
 end
