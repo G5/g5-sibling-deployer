@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby "2.1.1"
 
-gem "rails", "4.1.4"
+gem "rails", "4.1.7"
 gem "jquery-rails"
 
 gem "bootstrap-sass", "~> 2.1.0.1"
