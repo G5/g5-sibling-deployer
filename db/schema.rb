@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140227232816) do
+ActiveRecord::Schema.define(version: 20150507183315) do
 
   create_table "sibling_deploys", force: true do |t|
     t.integer  "sibling_id"
@@ -29,8 +29,9 @@ ActiveRecord::Schema.define(version: 20140227232816) do
     t.string   "uid"
     t.string   "name"
     t.datetime "published_at"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.string   "updated_app_kinds", default: "--- []\n"
   end
 
   create_table "siblings", force: true do |t|
