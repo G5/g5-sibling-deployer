@@ -29,8 +29,8 @@ while read p || [[ -n $p ]]; do
     # echo "Unsetting config"
     # heroku config:unset HOST -a "$p"
 
-#    echo "Pushing release"
-#    git push git@heroku.com:$p.git master
+    echo "Pushing release"
+    git push git@heroku.com:$p.git master
 
 #    heroku restart --app $p
 
