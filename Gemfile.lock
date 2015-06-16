@@ -264,6 +264,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   bootstrap-sass (~> 2.1.0.1)
   codeclimate-test-reporter
   coffee-rails (~> 4.0.0)
