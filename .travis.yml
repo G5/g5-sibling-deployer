@@ -2,10 +2,10 @@ language: ruby
 rvm:
   - 2.1.4
 script:
-  - bundle config https://gem.fury.io/g5dev/ $FURY_TOKEN
   - RAILS_ENV=test bundle exec rake db:schema:load --trace
   - bundle exec rspec
 before_script:
+  - bundle config https://gem.fury.io/g5dev/ $FURY_TOKEN
   - cp config/database.travis.yml config/database.yml
   - psql -c 'create database g5_sibling_deployer_test;' -U postgres
 notifications:
