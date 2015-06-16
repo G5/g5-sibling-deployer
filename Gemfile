@@ -1,4 +1,6 @@
 source "https://rubygems.org"
+source "https://msc9777J2TEEbgRsedKE@gem.fury.io/g5dev/"
+
 ruby "2.1.4"
 
 gem "rails", "4.1.7"
@@ -8,6 +10,7 @@ gem "bootstrap-sass", "~> 2.1.0.1"
 gem "quiet_assets", "~> 1.0.1"
 
 gem "g5_sibling_deployer_engine", "~> 0.7.0"
+gem "g5_ops"
 
 gem "sass-rails", "~> 4.0.0"
 gem "coffee-rails", "~> 4.0.0"
