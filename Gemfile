@@ -6,6 +6,7 @@ ruby "2.1.4"
 gem "rails", "4.1.7"
 gem "active_model_serializers"
 gem "jquery-rails"
+gem 'rack-cors'
 
 gem "bootstrap-sass", "~> 2.1.0.1"
 gem "quiet_assets", "~> 1.0.1"
