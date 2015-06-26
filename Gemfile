@@ -3,7 +3,7 @@ source "https://#{ENV['FURY_AUTH']}@gem.fury.io/g5dev/"
 
 ruby "2.1.4"
 
-gem "rails", "4.1.7"
+gem 'rails', '~> 4.1.11'
 gem "active_model_serializers"
 gem "jquery-rails"
 gem 'rack-cors'
