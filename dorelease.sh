@@ -22,15 +22,15 @@ while read p || [[ -n $p ]]; do
 #    heroku ps:scale worker=0 --app "$p"
 #    heroku ps:scale scheduler=0 --app "$p"
 
-    echo "Setting config"
-    heroku config:set FURY_AUTH=msc9777J2TEEbgRsedKE -a "$p"
+#    echo "Setting config"
+#    heroku config:set FURY_AUTH=msc9777J2TEEbgRsedKE -a "$p"
     # heroku config:set G5_HUB=https://g5-hub.herokuapp.com -a "$p"
 
     # echo "Unsetting config"
     # heroku config:unset HOST -a "$p"
 
     echo "Pushing release"
-    git push git@heroku.com:$p.git master
+    git push -f git@heroku.com:$p.git $version:master > ./logs/$p.log 2>&1 &
 
 #    heroku restart --app $p
 
@@ -47,6 +47,6 @@ while read p || [[ -n $p ]]; do
     # heroku ps:restart --app "$p"
 
     i=$[$i+1]
-done < applist.txt
+done < applist5.txt
 
 echo "Done"
